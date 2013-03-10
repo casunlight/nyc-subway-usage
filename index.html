@@ -90,7 +90,7 @@ d3.csv("subway.csv", function(error, csv) {
   rect.filter(function(d) { return d in data; })
       .attr("class", function(d) { return "day " + color(data[d]); })
     .select("title")
-      .text(function(d) { return d + ": " + percent(data[d]); });
+      .text(function(d) { return d + ": " + data[d]; });
 });
 
 function monthPath(t0) {
@@ -104,6 +104,6 @@ function monthPath(t0) {
       + "H" + (w0 + 1) * cellSize + "Z";
 }
 
-d3.select(self.frameElement).style("height", "516px");
+d3.select(self.frameElement).style("height", "420px");
 
 </script>
