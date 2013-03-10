@@ -1,1 +1,1 @@
-Based on Mike Bostock's [example](http://bl.ocks.org/mbostock/4063318), this shows New York City subway [usage](http://www.mta.info/developers/turnstile.html). More details and source code [available](https://github.com/ajschumacher/datathon).
+This shows New York City subway usage based on [turnstile data](http://www.mta.info/developers/turnstile.html). More details and source code [available](https://github.com/ajschumacher/datathon). Based (heavily) on Mike Bostock's excellent [example](http://bl.ocks.org/mbostock/4063318).
