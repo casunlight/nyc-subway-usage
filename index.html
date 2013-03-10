@@ -42,6 +42,7 @@ var width = 960,
 var day = d3.time.format("%w"),
     week = d3.time.format("%U"),
     percent = d3.format(".1%"),
+    commad = d3.format(","),
     format = d3.time.format("%Y-%m-%d");
 
 var color = d3.scale.quantize()
@@ -90,7 +91,7 @@ d3.csv("subway.csv", function(error, csv) {
   rect.filter(function(d) { return d in data; })
       .attr("class", function(d) { return "day " + color(data[d]); })
     .select("title")
-      .text(function(d) { return d + ": " + data[d]; });
+      .text(function(d) { return d + ": " + commad(data[d]); });
 });
 
 function monthPath(t0) {
